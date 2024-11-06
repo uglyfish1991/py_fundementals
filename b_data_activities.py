@@ -28,7 +28,9 @@ print("THE QUICK brown fox".lower())
 #lower() makes all uppercase characters lowercase within the specified string. It does not need arguments 
 
 print("the quick bROWn fox.".capitalize()) 
-#capitalize() will capitalise the first letter of the string, and make any other character lowercase. It only works per string, sentences mean nothing. It does not need parameters 
+#capitalize() will capitalise the first letter of the string, and make any other character lowercase. 
+# It only works per string, sentences mean nothing. 
+
 
 print("the quick brown fox fox fox".count("fox")) 
 #count needs one argument. It counts all instances of the argument, and displays the amount in the terminal. This example would return "3". 
