@@ -6,4 +6,7 @@
 2. Answers to the methods activities
 3. Variables, inputs, and casting notes
 4. Answers to the variables activities
-
+5. If/Else notes
+6. If/Else answers
+7. List / Dictionary notes
+8. List / Dictionary answers

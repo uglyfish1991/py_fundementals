@@ -1,4 +1,4 @@
-# # The print() function is how I can see things in the terminal
+The print() function is how I can see things in the terminal
 # print("I can write sentences here")
 
 # #This is a string - a collection of characters all strung together!

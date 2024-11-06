@@ -1,7 +1,21 @@
-# # my_name = "Katy"
-# # my_age = 33
-# # is_a_leaner = False
-# # favourite_drink = "latte"
+
+# !-----------------Variables----------------
+
+#? Variables are names or references we can use to refer to data that might change (vary), data that we don't have yet, or simply data that we will need to use a few times in our code. 
+
+# ? This is the string Katy
+
+"Katy"
+
+#? But if I needed to use that information elsewhere, how could I reference it? I've no name to call it by!
+
+my_name = "Katy"
+print(my_name)
+#? Assigning a variable name means I have a term I can use to refer to this data. It's a bit like a storage box. 
+#? Variables can contain any data type
+my_age = 33
+is_a_leaner = False
+favourite_drink = "latte"
 
 # # print(favourite_drink)
 # # print("My favourite drink is", favourite_drink)
