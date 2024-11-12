@@ -44,12 +44,19 @@ print("{} is {} years old, and their favourite drink is {}".format(my_name, my_a
 
 #? The newest method is the f-string. The f-string works like .format(), using {} to make placeholders, but here, we fill the {} with the
 #* expression we want evaluating
-#? This is a fancy way of saying that the string will work out the {} first, and then put that intromation into the string
+#? This is a fancy way of saying that the string will work out the {} first, and then put that information into the string
 print(f"{my_name} is {my_age} years old, and their favourite drink is {favourite_drink}")
 
-# # -------- Input Code -----------
+#? This also works with maths
+print(f" 4 + 5 = {4+5}")
 
-# # user_name = input("Type your name here:  > ")
+#* ------------- Input Code -------------------------------
+
+#? Often, we take the information we need to work with from the user.
+#? We can do this in the terminal using the input() function
+
+
+user_name = input("Type your name here:  > ")
 
 # # print(f"Hello, {user_name}")
 # # print(type(user_name))
@@ -74,7 +81,3 @@ print(f"{my_name} is {my_age} years old, and their favourite drink is {favourite
 # num2 = int(input("Type in your second number: "))
 
 # print(num1*num2)
-
-my_fav_fruit,my_worst_fruit = "apples", "grapes"
-
-print(my_worst_fruit)
