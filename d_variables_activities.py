@@ -22,6 +22,8 @@ print(f"{num1} ** {num2} = {num1**num2}")
 print(f"{num1} / {num2} = {num1/num2}")
 print(f"{num1} % {num2} = {num1%num2}")
 
+# ! ---------- Activity 3 --------------------
+
 apple_cost = 25
 apple_amount = int(input("How many apples would you like to buy?"))
 

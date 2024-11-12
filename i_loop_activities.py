@@ -1,19 +1,20 @@
-#------ Activity 1 A -------------
 
-# for i in range(1, 14):
-#     print("Hello World")
+# !------ Activity 1 A -------------
 
-# for i in range(13):
-#     print("hello world")
+for i in range(1, 14):
+    print("Hello World")
 
-# ------ Activity 1 B -------------
+for i in range(13):
+    print("hello world")
 
-# count = 0
-# while count < 13:
-#     print("hello world")
-#     count += 1
+#! ------ Activity 1 B -------------
 
-# ------ Activity 2 -------------
+count = 0
+while count < 13:
+    print("hello world")
+    count += 1
+
+#! ------ Activity 2 -------------
 
 for i in range(1,13):
     for j in range(1,13):
