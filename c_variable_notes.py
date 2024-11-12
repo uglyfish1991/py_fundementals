@@ -50,34 +50,54 @@ print(f"{my_name} is {my_age} years old, and their favourite drink is {favourite
 #? This also works with maths
 print(f" 4 + 5 = {4+5}")
 
+#* ------------- Arthimetic Operators Code -------------------------------
+
+#? Addition operator: adds 3 and 7, resulting in 10
+print(3 + 7)
+#? Subtraction operator: subtracts 4 from 7, resulting in 3
+print(7 - 4)
+#? Multiplication operator: multiplies 3 by 2, resulting in 6
+print(3 * 2)
+#? Exponentiation operator: raises 3 to the power of 3, resulting in 27      
+print(3 ** 3)
+#? Division operator: divides 15 by 3, resulting in 5.0     
+print(15 / 3)
+#? Modulus operator: gives the remainder of 16 divided by 3, resulting in 1
+print(16 % 3)
+
 #* ------------- Input Code -------------------------------
 
 #? Often, we take the information we need to work with from the user.
 #? We can do this in the terminal using the input() function
-
+#? To allow us to reuse the response the user gives us elsewhere in the code
 
 user_name = input("Type your name here:  > ")
+print(f"Hello, {user_name}")
 
-# # print(f"Hello, {user_name}")
-# # print(type(user_name))
+#? Whatever is typed in will always be a string. Try running this code again and enter a number, even though you typed a number, the code below proves it is a string:
+print(type(user_name))
 
-# # print(3+7)
-# # print(7-4)
-# # print(3*2)
-# # print(3**3)
-# # print(15/3)
-# # print(16%3)
+#? This can cause issues if we are trying to work with inputted integers, lile a cash machine!
 
-# # balance = 100
-# # amount_to_withdraw = 20
-# # print(balance)
-# # balance = balance - amount_to_withdraw
-# # # balance -=amount_to_withdraw
-# # print(balance)
+#! print("Type in two numbers to multiply them")
+#! num1 = input("Type in your first number: ")
+#! num2 = input("Type in your second number: ")
+#! print(num1*num2)
 
-# print("Type in two numbers to multiply them")
+#? The above code would give us an error - whatever we typed in for num1 and num2 would be a string, and we can't multiply to strings together.
 
-# num1 = int(input("Type in your first number: "))
-# num2 = int(input("Type in your second number: "))
+#? Instead, we must cast it. This involves using a special kind of function to rebuilt our strings as integers were possible!
 
-# print(num1*num2)
+print("Type in two numbers to multiply them")
+num1 = int(input("Type in your first number: "))
+num2 = int(input("Type in your second number: "))
+print(num1*num2)
+
+#? Fix the code below so a user can type in how much they want to withdraw!
+
+# balance = 100
+# amount_to_withdraw = 20
+# print(balance)
+# balance = balance - amount_to_withdraw
+# # balance -=amount_to_withdraw
+# print(balance)
