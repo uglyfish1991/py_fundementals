@@ -25,36 +25,72 @@ else:
     print("I've not heard this before! Turn it up!")
 
 
-# music = "britpop"
+#* ------ Oother Comparison Operators ------------
 
-# if music == "Oasis":
-#     print("The best!")
-# elif music !="britpop":
-#     print("I want to listen to britpop")
-# else:
-#     print("Yay! Britpop!")
+#? There are other comparison operators that exist. These are: 
+#? == equal to
+#? != not equal to
+#? > less than
+#? < greater than
+#? >= less than or equal to
+#? <= greater than or equal to
 
-# place = "MCR"
-# weather = "Cloudy"
-# if place == "MCR" and weather == "Sunny":
-#     print("Check again!")
-# elif place =="MCR" and weather == "Rain":
-#     print("Obvs")
-# else:
-#     print("What? It isn't raining?")
+music = "britpop"
 
-# day = "Monday"
-# bank_holiday = True
-
-# if day == "Saturday" or day == "Sunday" or bank_holiday==True:
-#     print("A day off!")
-# else:
-#     print("Off to work I go.")
-
-password = input("Enter your password: ")
-p_len = len(password)
-# print(p_len)
-if p_len <= 8:
-    print("The password is too short")
+#? Here, we are saying "if music does not equal britpop" - this will be the case for anything but britpop!
+if music !="britpop":
+    print("I want to listen to britpop")
 else:
-    print(password)
+    print("Yay! Britpop!")
+
+#------------------------------------------------
+
+#? An if statement will do the first true thing it encounters - even if there is something more true further down. Take this code for example:
+#? Even though Oasis is there, we will see "I want to listen to britpop"
+#? This is because the first check is music != "britpop"
+#? The string Oasis does not match the string britop. It is true to say they don't match - and so we see "I want to listen to britpop"
+music = "Oasis"
+
+if music !="britpop":
+    print("I want to listen to britpop")
+elif music == "Oasis":
+    print("The best!")
+else:
+    print("Yay! Britpop!")
+
+#? When ordering an if statement, there are many approaches, but usually the most specific thing comes first! 
+
+if music == "Oasis":
+    print("The best!")
+elif music !="britpop":
+    print("I want to listen to britpop")
+else:
+    print("Yay! Britpop!")
+
+#* ------ Logical Operators ------------
+
+#? We can use logical operators to expand our if statements, and look at multiple conditions.
+#? These logical operators are very like English. They are words like "and", "or"!
+
+#? Here, both conditions need to match. We would need to see MCR AND Sunny to get the response "Check Again!"
+
+place = "MCR"
+weather = "Cloudy"
+if place == "MCR" and weather == "Sunny":
+    print("Check again!")
+elif place =="MCR" and weather == "Rain":
+    print("Obvs")
+else:
+    print("What? It isn't raining?")
+
+#? We can use or to have many comparisons trigger the same response. If its Saturday, Sunday, or a Bank Holiday, any of them will trigger the response "A day off!"
+#? This saves me having to write many elifs which do the same thing!
+
+day = "Monday"
+bank_holiday = True
+
+if day == "Saturday" or day == "Sunday" or bank_holiday==True:
+    print("A day off!")
+else:
+    print("Off to work I go.")
+
