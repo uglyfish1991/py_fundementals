@@ -8,5 +8,3 @@ days_alive = (current_date - birthdate).days
  
 print(f"You have been alive for {days_alive} days.")
 
-print("Hello world")
-
